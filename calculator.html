@@ -1,0 +1,325 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/assets.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+
+    <header class="header">
+        <div class="container">
+
+            <div class="header__logo">
+                <a href="index.html">
+                    <img src="img/design/logo.png" alt="">
+                </a>
+            </div>
+            <!-- /.header__logo -->
+            <div class="header__menu">
+                <div class="header__apartment">
+                    <span>Дизайн для квартиры:</span>
+                    <ul>
+                        <li><a href="style.html">Классический</a></li>
+                        <li><i></i></li>
+                        <li><a href="style.html">Скандинавский</a></li>
+                        <li><i></i></li>
+                        <li><a href="style.html">модерн</a></li>
+                    </ul>
+                </div>
+                <!-- /.header__apartment -->
+                <div class="header__bathroom">
+                    <span>7 стилей:</span>
+                    <ul>
+                        <li><a href="bathroom.html">для ванной комнаты</a></li>
+                    </ul>
+                </div>
+                <!-- /.header__bathroom -->
+            </div>
+            <!-- /.header__menu -->
+            <div class="header__calculation">
+                <a class="header__calculation-calc" href="#">Сделать расчет</a><br>
+                <a class="header__calculation-tel" href="tel:+7 499 647-54-15 ">+7 499 647-54-15 </a>
+            </div>
+            <!-- /.header__calculation -->
+            <div class="header__mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <!-- /.header__mobile-menu -->
+        </div>
+        <!-- /.container -->
+    </header>
+    <!-- /.header -->
+
+    <div class="calculator-form">
+        <div class="container">
+            <div class="calculator-form__btns">
+                <a href="#" class="calculator-form__btn calculator-form__btn--green">Расчет всей квартиры</a>
+                <a href="#" class="calculator-form__btn calculator-form__btn--blue">Расчет только ванной</a>
+            </div>
+            <!-- /.calculator-form__btns -->
+            <h1>Рассчет и заказ ремонта</h1>
+            <form action="#" method="post">
+                <div class="clearfix">
+                    <input class="input-half" type="text" placeholder="Имя">
+                    <input class="input-half input-half--right" type="text" placeholder="Телефон">
+                    <input class="input-big" type="text" placeholder="Адрес">
+                    <input class="input-small input-small--right" type="text" placeholder="Дом">
+                </div>
+                <!-- /.clearfix -->
+                <div class="clearfix">
+                    <input class="input-small" type="text" placeholder="Площадь"> <span class="span-m">м<sup>2</sup></span>
+                    <span class="span-k">Комнаты:</span>
+                    <div class="calculator-form__check clearfix">
+                        <span>1</span>
+                        <span>2</span>
+                        <span class="active">3</span>
+                        <span>4</span>
+                        <span>5</span>
+                        <span>Студия</span>
+                    </div>
+                    <!-- /.calculator-form__check -->
+                </div>
+                <!-- /.clearfix -->
+            </form>
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /.calculator-form -->
+
+    <section class="calculator">
+        <div class="container">
+            <div class="calculator-content">
+                <div class="calculator-slider">
+                    <img src="img/content/decor-slider/decor-slider.jpg" alt="">
+                    <img src="img/content/decor-slider/decor-slider.jpg" alt="">
+                    <img src="img/content/decor-slider/decor-slider.jpg" alt="">
+                </div>
+                <!-- /.calculator__slider -->
+                <div class="calculator__result calculator__result--desktop">
+                    <div class="calculator__full-price">
+                        Стоимость ремонта: <b><span>244 568 000</span> руб</b>
+                    </div>
+                    <!-- /.calculator__full-price -->
+                    <div class="calculator__options">
+                        <h4>Дополнительные опции</h4>
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="option" value="1" id="options_1" /> <label for="options_1">Замена входной двери</label>
+                                </td>
+                                <td>+3 256 625 руб</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="option" value="1" id="option_2" /> <label for="option_2">Замена входной двери</label>
+                                </td>
+                                <td>+3 256 625 руб</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="checkbox" name="option" value="1" id="option_3" /> <label for="option_3">Замена входной двери</label>
+                                </td>
+                                <td>+3 256 625 руб</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- /.calculator__options -->
+                    <div class="calculator__full-price">
+                        Стоимость включая опции: <b><span>244 568 000</span> руб</b>
+                    </div>
+                    <!-- /.calculator__full-price -->
+                    <div class="calculator__order">
+                        <button>Оставить заявку</button>
+                    </div>
+                    <!-- /.calculator__order -->
+                </div>
+                <!-- /.calculator__result -->
+            </div>
+            <!-- /.calculator-content -->
+            <div class="calculator-filter">
+                <div class="calculator-filter__item">
+                    <h3>Основной стиль:</h3>
+                    <div class="calculator-filter__open active">
+                        <div class="style-check">
+                            <div class="style-check__item">
+                                <img src="img/design/ico/steps/1.png" alt="">
+                            </div>
+                            <!-- /.style-check__item -->
+                            <div class="style-check__item">
+                                <img src="img/design/ico/steps/1.png" alt="">
+                            </div>
+                            <!-- /.style-check__item -->
+                            <div class="style-check__item active">
+                                <img src="img/design/ico/steps/1.png" alt="">
+                            </div>
+                            <!-- /.style-check__item -->
+                        </div>
+                        <!-- /.style-check -->
+                    </div>
+                    <!-- /.calculator-filter__open -->
+                </div>
+                <!-- /.calculator-filter__item -->
+                <div class="calculator-filter__item">
+                    <h3>Оттенки:</h3>
+                    <div class="calculator-filter__open active">
+                        <div class="style-check">
+                            <div class="style-check__item">
+                                <img src="img/design/ico/steps/1.png" alt="">
+                            </div>
+                            <!-- /.style-check__item -->
+                            <div class="style-check__item">
+                                <img src="img/design/ico/steps/1.png" alt="">
+                            </div>
+                            <!-- /.style-check__item -->
+                            <div class="style-check__item active">
+                                <img src="img/design/ico/steps/1.png" alt="">
+                            </div>
+                            <!-- /.style-check__item -->
+                            <div class="style-check__item">
+                                <img src="img/design/ico/steps/1.png" alt="">
+                            </div>
+                            <!-- /.style-check__item -->
+                        </div>
+                        <!-- /.style-check -->
+                    </div>
+                    <!-- /.calculator-filter__open -->
+                </div>
+                <!-- /.calculator-filter__item -->
+                <div class="calculator-filter__item">
+                    <h3>Комплектация:</h3>
+                    <div class="calculator-filter__open active">
+
+                    </div>
+                    <!-- /.calculator-filter__open -->
+                </div>
+                <!-- /.calculator-filter__item -->
+                <div class="calculator-filter__item">
+                    <h3>Санузел:</h3>
+                    <div class="calculator-filter__open">
+                        <input type="radio" name="s1" id="s1">
+                        <label for="s1">
+                            Совменщенный
+                        </label><br>
+                        <input type="radio" name="s1" id="s2">
+                        <label for="s2">
+                            Раздельный
+                        </label>
+                    </div>
+                    <!-- /.calculator-filter__open -->
+                </div>
+                <!-- /.calculator-filter__item -->
+            </div>
+            <!-- /.calculator-filter -->
+
+            <div class="calculator__result calculator__result--mobile">
+                <div class="calculator__full-price">
+                    Стоимость ремонта: <b><span>244 568 000</span> руб</b>
+                </div>
+                <!-- /.calculator__full-price -->
+                <div class="calculator__options">
+                    <h4>Дополнительные опции</h4>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="option" value="1" id="options_1_m" /> <label for="options_1_m">Замена входной двери</label>
+                            </td>
+                            <td>+3 256 625 руб</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="option" value="1" id="option_2_m" /> <label for="option_2_m">Замена входной двери</label>
+                            </td>
+                            <td>+3 256 625 руб</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="checkbox" name="option" value="1" id="option_3_m" /> <label for="option_3_m">Замена входной двери</label>
+                            </td>
+                            <td>+3 256 625 руб</td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- /.calculator__options -->
+                <div class="calculator__full-price">
+                    Стоимость включая опции: <b><span>244 568 000</span> руб</b>
+                </div>
+                <!-- /.calculator__full-price -->
+                <div class="calculator__order">
+                    <button>Оставить заявку</button>
+                </div>
+                <!-- /.calculator__order -->
+            </div>
+            <!-- /.calculator__result -->
+
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.calculator -->
+
+
+
+
+    <section class="qa">
+        <div class="container">
+            <h2>Вопрос / Ответ </h2>
+            <ul>
+                <li><a href="#">
+                    У меня пустая квартира и стены кривые скорее всего. Сколько будет сделать ремонт в такой?
+                </a></li>
+                <li><a href="#">
+                    Можно ли жить в квартире во время ремонта?
+                </a></li>
+                <li><a href="#">
+                    Можно ли поменять цвет стен?
+                </a></li>
+                <li><a href="#">
+                    Можно ли поменять цвет стен?
+                </a></li>
+                <li><a href="#">
+                    У меня пустая квартира и стены кривые скорее всего. Сколько будет сделать ремонт в такой?
+                </a></li>
+                <li><a href="#">
+                    Можно ли поменять цвет стен?
+                </a></li>
+            </ul>
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.qa -->
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__contact">
+                <img src="img/design/logo.png" alt="">
+                <a href="tel:+7 499 647-54-15">+7 499 647-54-15 </a>
+            </div>
+            <!-- /.footer__contact -->
+            <div class="footer__copyright">
+                Copyright Чистовой 2016
+            </div>
+            <!-- /.footer__copyright -->
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!-- /.footer -->
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/assets.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
