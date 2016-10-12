@@ -141,17 +141,41 @@ $( document ).ready(function() {
 $('.style-main-slider-inner-1').slick({
     dots: true,
     infinite: false,
-    arrows: false
+    arrows: false,
+    responsive: [
+        {
+            breakpoint: 640,
+            settings: {
+                dots: false
+            }
+        }
+    ]
 });
 $('.style-main-slider-inner-2').slick({
     infinite: false,
     arrows: false,
-    dots: true
+    dots: true,
+    responsive: [
+        {
+            breakpoint: 640,
+            settings: {
+                dots: false
+            }
+        }
+    ]
 });
 $('.style-main-slider-inner-3').slick({
     infinite: false,
     arrows: false,
-    dots: true
+    dots: true,
+    responsive: [
+        {
+            breakpoint: 640,
+            settings: {
+                dots: false
+            }
+        }
+    ]
 });
 $(".style-main-slider__dot").click(function(){
     if(!$(this).hasClass('active')) {
