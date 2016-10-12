@@ -266,10 +266,10 @@ p {
 }
 
 .header {
+    position: relative;
     font-family: 'OpenSans', sans-serif;
-
+    z-index: 10;
     min-height: 90px;
-
     border-bottom: 1px solid #d1d1d1;
     background: #fff;
 }
@@ -288,7 +288,6 @@ p {
 @media (max-width: 767px) {
     .header {
         position: fixed;
-        z-index: 10;
         top: 0;
         left: 0;
         width: 100%;
@@ -319,10 +318,10 @@ p {
 
 .header__mobile-menu {
     display: none;
-    float: right;
-
+    position: absolute;
     width: 35px;
-    margin-top: 15px;
+    top: 15px;
+    right: 20px;
 }
 
 .header__mobile-menu span {
@@ -334,7 +333,7 @@ p {
     background: #000;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .header__mobile-menu {
         display: block;
     }
@@ -372,7 +371,7 @@ p {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .header__menu {
         position: fixed;
         top: 65px;
@@ -396,12 +395,10 @@ p {
     padding-top: 22px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .header__apartment {
         float: none;
-
         padding: 15px;
-
         background: #fff;
     }
 }
@@ -433,7 +430,7 @@ p {
     vertical-align: top;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .header__apartment ul li {
         display: block;
 
@@ -441,7 +438,7 @@ p {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .header__apartment ul li:last-of-type {
         margin-bottom: 0;
     }
@@ -472,7 +469,7 @@ p {
     background: #a8a8a8;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .header__apartment ul li i {
         display: none;
     }
@@ -489,7 +486,7 @@ p {
     background: #14c6c5;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .header__bathroom {
         float: none;
 
@@ -538,12 +535,15 @@ p {
 
 .header__calculation {
     float: right;
-
     padding-top: 5px;
-
     text-align: right;
 }
 
+@media (max-width: 991px) {
+    .header__calculation {
+        margin-right: 50px;
+    }
+}
 @media (max-width: 767px) {
     .header__calculation {
         display: none;
