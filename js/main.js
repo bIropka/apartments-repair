@@ -97,9 +97,37 @@ $( document ).ready(function() {
     });
 });
 
+$( document ).ready(function() {
 
-// Вкладки
-$(".style-tabs-wrap").each(function(){
+    $('.style-tabs-control').click(function() {
+
+        if (!$(this).hasClass('active')) {
+            var items = $(this).parents('.style-tabs-wrap').find('.style-tabs-item');
+            var index = $(this).index();
+            $(this).siblings('.active').removeClass('active');
+            $(this).addClass('active');
+            items.fadeOut(0);
+            items.eq(index).fadeIn(500);
+        }
+
+    });
+
+    $('.tab-inner-control').click(function() {
+
+        if (!$(this).hasClass('active')) {
+            var items = $(this).parents('.tab-inner').find('.tab-inner-item');
+            var index = $(this).index();
+            $(this).siblings('.active').removeClass('active');
+            $(this).addClass('active');
+            items.fadeOut(0);
+            items.eq(index).fadeIn(500);
+        }
+
+    });
+
+});
+
+/*$(".style-tabs-wrap").each(function(){
     var $tabs = $(this);
     $($tabs).on( "click",".style-tabs__tab", function(e){
         e.preventDefault();
@@ -107,7 +135,7 @@ $(".style-tabs-wrap").each(function(){
         $(".style-tabs__tab", $tabs).removeClass('active').eq(tabIndex).addClass('active');
         $(".style-tabs__item", $tabs).removeClass('active').eq(tabIndex).addClass('active');
     });
-});
+});*/
 
 
 $('.style-main-slider-inner-1').slick({
@@ -139,7 +167,7 @@ $(".style-main-slider__dot").click(function(){
 
 
 
-$(".intab").each(function(){
+/*$(".intab").each(function(){
     var $intab = $(this);
     var $intabSlider = $(".intab__items", $intab);
     var $intabTab = $(".intab__tab", $intab);
@@ -157,7 +185,7 @@ $(".intab").each(function(){
         $(".intab__tab", $intab).removeClass('active').eq(tabIndex).addClass('active');
         $(".intab__items", $intab ).slick('slickGoTo', parseInt(tabIndex));
     });
-});
+});*/
 
 $(".qa ul li").on("click", function () {
     $(".qa ul li").removeClass('active');
