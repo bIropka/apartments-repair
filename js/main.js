@@ -19,7 +19,7 @@ $('.decor-slider__slider').slick({
 });
 
 $('.main__slider').slick({
-    infinite: false,
+    infinite: true,
     dots: true,
     arrows: false,
     slidesToShow: 1,
@@ -193,8 +193,7 @@ $(".style-main-slider-control").click(function(){
 });
 
 $(".qa ul li").on("click", function () {
-    $(".qa ul li").removeClass('active');
-    $(this).addClass('active');
+    $(this).find('p').slideToggle();
 });
 
 
