@@ -1312,6 +1312,7 @@ p {
 
 .step--4__item img {
     margin-bottom: 20px;
+    width: 100%;
 }
 
 @media (max-width: 991px) {

@@ -12,7 +12,7 @@ $( document ).ready(function() {
 
 
 $('.decor-slider__slider').slick({
-    infinite: false,
+    infinite: true,
     dots: true,
     slidesToShow: 1,
     slidesToScroll: 1
